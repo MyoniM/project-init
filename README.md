@@ -14,10 +14,15 @@ PDIR='the directory to store your projects'
 
 ### Usage:
 ```bash
-Command to run the program
+Command to run the program with cmd or other comparable languages
 
 'create <project_name>'
 'create <project_name> -t <template>'   - to add project templates
+
+Command to run the program with bash or other comparable languages
+
+'create.bat <project_name>'
+'create.bat <project_name> -t <template>'   - to add project templates
 ```
 
 ```bash
