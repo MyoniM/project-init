@@ -3,6 +3,7 @@
 @REM Dont call without at least a project name
 IF "%1" == "" ( 
     ECHO Error, missing project information
+    PAUSE
     EXIT
 )
 
@@ -26,4 +27,8 @@ IF NOT "%1" == "" (
 )
 
 ECHO Creating project %projectName% { options: -t %template% }
-python create.py %projectName% %template%
+
+@REM the path you set in windows environment variables must be same with
+@REM the path you set to the python file
+@REM make sure to add white space inside quotes
+python "C:\Users\YONI\Documents\Projects\My Projects\project-init\create.py" %projectName% %template%
