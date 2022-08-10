@@ -19,3 +19,11 @@ Command to run the program
 'create <project_name>'
 'create <project_name> -t <template>'   - to add project templates
 ```
+
+```bash
+templates:  "cra"       : f"npx create-react-app {projectName}",
+            "cra-t"     : f"npx create-react-app {projectName} --template typescript",
+            "next"      : f"npx create-next-app@latest {projectName}",
+            "next-t"    : f"npx create-next-app@latest {projectName} --ts",
+            "flutter"   : f"flutter create {projectName}"  
+```
