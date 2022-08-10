@@ -28,7 +28,6 @@ IF NOT "%1" == "" (
 
 ECHO Creating project %projectName% { options: -t %template% }
 
-@REM the path you set in windows environment variables must be same with
-@REM the path you set to the python file
-@REM make sure to add white space inside quotes
+@REM the path you set to the python file must be same with
+@REM the path you set in windows PATH with 'create.py' added at the end 
 python "C:\Users\YONI\Documents\Projects\My Projects\project-init\create.py" %projectName% %template%
